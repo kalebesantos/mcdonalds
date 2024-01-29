@@ -1,2 +1,3 @@
-# mcdonalds
+# MC donald's
  
+-Todos os direitos reservados a mim...
