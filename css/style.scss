@@ -1,0 +1,68 @@
+:root{
+    --mcred: #DA291C;
+    --mcyellow: #FFC72C;
+    --mcblack: #27251F;
+}
+
+header{
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 75px;
+        background: var(--mcred);
+        box-shadow: 0 3px 10px #ccc;
+        position: fixed;
+        padding: 0 32px;
+
+        .logo img{
+            height: 40px;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        ul li a{
+            color: var(--mcblack);
+            font-weight: 500;
+            transition: all 0.4s;
+        }
+
+        ul li a:hover{
+            color: var(--mcyellow);
+        }
+
+        ul i{
+            color: var(--mcblack);
+            transition: all 0.4s; 
+            cursor: pointer;
+        }
+
+        ul i:hover{
+            color: var(--mcyellow);
+        }
+
+        .nav-bar{
+            cursor: pointer;
+            display: none;
+        }
+    
+        .nav-bar .bar{
+            display: block;
+            width: 28px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: var(--mcblack);
+            margin: 5px auto;
+            transition: all 0.3s;
+        }
+    
+        .nav-bar .bar:nth-child(1), .nav-bar .bar:nth-child(2){
+            background: var(--mcyellow);
+        }
+    }
+}
